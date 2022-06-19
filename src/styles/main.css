@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body{
+    font-family: 'Poppins', sans-serif;
+  }
+  .skip-link {
+     position: absolute;
+     top: -40px;
+     left: 0;
+     background-color: #bf1722;
+     color: white;
+     padding: 8px;
+     z-index: 100;
+  }
+   
+  .skip-link:focus {
+     top: 0;
+  }
+  .laptop-navbar{
+    display: none;
+  }
+  nav{
+    background-color: plum;
+    color: white;
+    padding: 15px;
+    border-bottom: 1px solid white;
+    display: flex;
+    align-items: center;
+  }
+  nav button{
+    background-color: plum;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 44px;
+    margin-right: 12px;
+  }
+  li a{
+    font-size: 44px;
+  }
+  #drawer{
+    width: 250px;
+    height: 100%;
+    position: absolute;
+    transform: translate(-280px, 0);
+    transition: transform 0.3s ease-in-out;
+    background-color:plum;
+    padding-left: 15px;
+  }
+  #drawer.open {
+   transform: translate(0,0)
+  }
+  #drawer li{
+    list-style-type: none;
+  }
+  #drawer a{
+    color: white;
+    text-decoration: none;
+  }
+  img{
+    width: 100%;
+    height: auto;
+  }
+  .resto-katalog{
+    padding: 12px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+  .resto{
+    border: .3px solid rgb(163, 163, 163);
+    border-radius: 8px;
+    padding: 5px;
+  }
+  footer{
+    border-top: .3px solid rgb(163, 163, 163);
+    padding: 25px;
+  }
+  #humberger-button{
+    padding: 0 10px;
+  }
+
+  .detail-container{
+    margin: 12px;
+  }
+  .detail-container p{
+    text-align: justify;
+  }
+
+  .like {
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #db0000;
+    
+    position: fixed;
+    bottom: 16px;
+    right: 16px;
+    border-radius: 50%;
+    border: 0;
+    
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+  }

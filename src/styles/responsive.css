@@ -1,0 +1,35 @@
+@media screen and (min-width: 700px) {
+  .laptop-navbar{
+    display: flex;
+  }
+  nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+  }
+  nav li{
+    margin-left: 20px;
+  }
+  nav a{
+    color: white;
+    text-decoration: none;
+  }
+  nav a:hover{
+    color: rgb(230, 230, 230);
+  }
+  .mobile-navbar{
+    display: none;
+  }
+  .resto-katalog{
+    padding: 12px 150px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+  }
+  .detail-container{
+    padding: 12px 150px;
+  }
+  .detail-container img{
+    width: 600px;
+  }
+}
